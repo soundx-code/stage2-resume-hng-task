@@ -9,7 +9,6 @@ const server = express();
 const path = require('path');
 const hbs = require('express-handlebars');
 
-server.use('/assets', express.static(process.cwd() + '/assets'));
 server.use(bodyparser.urlencoded({ extended: false }));
 server.use(bodyparser.json());
 
